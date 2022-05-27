@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/happybirthday/static/css/main.3e95fb48.chunk.css",
-    "main.js": "/happybirthday/static/js/main.943b7f30.chunk.js",
-    "main.js.map": "/happybirthday/static/js/main.943b7f30.chunk.js.map",
-    "runtime-main.js": "/happybirthday/static/js/runtime-main.7be4144f.js",
-    "runtime-main.js.map": "/happybirthday/static/js/runtime-main.7be4144f.js.map",
-    "static/js/2.e381c1b7.chunk.js": "/happybirthday/static/js/2.e381c1b7.chunk.js",
-    "static/js/2.e381c1b7.chunk.js.map": "/happybirthday/static/js/2.e381c1b7.chunk.js.map",
+    "main.css": "/happybirthday/static/css/main.f80a6e52.css",
+    "main.js": "/happybirthday/static/js/main.7d2b96f5.js",
+    "static/media/balloons_375.jpg": "/happybirthday/static/media/balloons_375.bb4998b6bb6a6945833f.jpg",
+    "static/media/fanfare.mp3": "/happybirthday/static/media/fanfare.56efca852ae6632d7ab7.mp3",
     "index.html": "/happybirthday/index.html",
-    "static/css/main.3e95fb48.chunk.css.map": "/happybirthday/static/css/main.3e95fb48.chunk.css.map",
-    "static/js/2.e381c1b7.chunk.js.LICENSE.txt": "/happybirthday/static/js/2.e381c1b7.chunk.js.LICENSE.txt",
-    "static/media/balloons_375.bb4998b6.jpg": "/happybirthday/static/media/balloons_375.bb4998b6.jpg",
-    "static/media/fanfare.56efca85.mp3": "/happybirthday/static/media/fanfare.56efca85.mp3"
+    "main.f80a6e52.css.map": "/happybirthday/static/css/main.f80a6e52.css.map",
+    "main.7d2b96f5.js.map": "/happybirthday/static/js/main.7d2b96f5.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.7be4144f.js",
-    "static/js/2.e381c1b7.chunk.js",
-    "static/css/main.3e95fb48.chunk.css",
-    "static/js/main.943b7f30.chunk.js"
+    "static/css/main.f80a6e52.css",
+    "static/js/main.7d2b96f5.js"
   ]
 }
