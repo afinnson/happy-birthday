@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import DialogTitle from '@mui/material/DialogTitle';
 import Dialog from '@mui/material/Dialog';
 
-import landscape from './landscape.jpg';
 import fanfare from './fanfare.mp3';
 
 import SOLUTION from './solution.js';
+import CorrectAnswerPopup from './CorrectAnswerPopup';
 
 const QuestionBox = () => {
     const audio = new Audio(fanfare);
 
     const [open, setOpen] = useState(false);
     const [answer, setAnswer] = useState("0");
+    const [date, setDate] = useState(new Date);
 
     const openPopUp = () => {
-        console.log("Hej")
+        setDate(new Date);
         setOpen(true);
         audio.play();
     }
@@ -31,21 +31,9 @@ const QuestionBox = () => {
         const { onClose, selectedValue, open } = props;
       
         return (
-          <Dialog onClose={handleClose} open={open} 
-            style={{
-                backgroundColor: '#bc9932',
-                color: '#00ff00'
-            }}
-          >
-            <div
-             style={{
-                backgroundColor: '#ff00ff',
-             }}
-            >
-                HEJ
-            </div>
-          </Dialog>
-        );
+            <Dialog onClose={handleClose} open={open}>
+                <CorrectAnswerPopup date={date}/>
+            </Dialog>);
       }
 
     return (
@@ -54,18 +42,21 @@ const QuestionBox = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            maxWidth: "50rem",
+            marginTop: "3rem",
+            marginBottom: "3rem",
+            width: "70vw",
+            maxWidth: "40rem",
             borderWidth: "2px",
-            borderRadius: "2px",
+            borderRadius: "5px",
             borderStyle: "solid",
-            borderColor: '#cca937',
-            backgroundColor: '#bc9932'
+            borderColor: '#242424',
+            // backgroundColor: '#bc9932',
+            backgroundColor: '#121212',
+            opacity: 0.9
         }}
         >
-            <img src={landscape} alt=""/>
-
-            <div>
-                orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus nibh et diam euismod porttitor. Ut tempus risus quis vestibulum consequat. Proin volutpat libero id quam pulvinar aliquam. Sed ullamcorper ipsum sit amet ipsum sagittis laoreet. Nam lobortis consequat lacus eu ullamcorper. Proin quis felis ac sem consectetur vulputate et at leo. Sed justo quam, mollis ac mauris vitae, cursus dapibus urna. Mauris sit amet magna at nibh tincidunt commodo eget in orci. Praesent vehicula commodo nunc non suscipit. Fusce convallis mollis urna, quis posuere eros ultricies sed. Donec quis diam vitae turpis dapibus dignissim. In blandit elit non convallis volutpat. Praesent ipsum felis, ornare at nisl vel, vulputate venenatis neque. Fusce ultricies nisi a lacus porta, non eleifend magna tincidunt.
+            <div style={{padding: "1rem "}}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus nibh et diam euismod porttitor. Ut tempus risus quis vestibulum consequat. Proin volutpat libero id quam pulvinar aliquam. Sed ullamcorper ipsum sit amet ipsum sagittis laoreet. Nam lobortis consequat lacus eu ullamcorper. Proin quis felis ac sem consectetur vulputate et at leo. Sed justo quam, mollis ac mauris vitae, cursus dapibus urna. Mauris sit amet magna at nibh tincidunt commodo eget in orci. Praesent vehicula commodo nunc non suscipit. Fusce convallis mollis urna, quis posuere eros ultricies sed. Donec quis diam vitae turpis dapibus dignissim. In blandit elit non convallis volutpat. Praesent ipsum felis, ornare at nisl vel, vulputate venenatis neque. Fusce ultricies nisi a lacus porta, non eleifend magna tincidunt.
             </div>
             <SimpleDialog
                 open={open}
@@ -73,28 +64,57 @@ const QuestionBox = () => {
             />
             <div
                 style={{
-                    alignContent: "space-evenly",
+                    display: "flex",
+                    padding: "1rem",
+                    // justifyContent: "space-around",
+                    // alignSelf: "center",
+                    // alignItems: "center",
                     flexDirection: "row",
-                    display: "flex"
+                    // minHeight: "5rem",
+                    // width: "100%"
                 }}
             >
-                <Button
-                onClick={buttonOnClick}
-                style={{
-                    backgroundColor: '#cca937'
-                }}>
-                    🎁
-                </Button>
-                <TextField
-                    label="Outlined"
-                    variant="outlined"
-                    onKeyDownCapture={(e) => {
-                        if (e.code === "Enter") {
-                            buttonOnClick();
-                        }
+                <div 
+                    style={{
+                        display: "flex",
+                        flex: 1,
+                        alignSelf: "stretch"
+                        // minHeight: "3rem"                        
                     }}
-                    onChange={(e) => setAnswer(e.target.value)}
-                />
+                >
+                    <Button
+                    onClick={buttonOnClick}
+                    style={{
+                        backgroundColor: '#dbb62e',
+                        alignSelf: "stretch"
+                        // maxWidth: "3rem"
+                    }}
+                    color= {answer === SOLUTION() ? "success" : "error"}
+                    >
+                        🎁
+                    </Button>
+                </div>
+                <div 
+                    style={{
+                        display: "flex",
+                        alignSelf: "stretch",
+                        flex: 2
+                        // minHeight: "3rem"                        
+                    }}
+                >
+                    <TextField
+                        sx={{ input: { color: 'white', backgroundColor: "#0ca696", borderRadius: "4px" } }} 
+                        label=""
+                        variant="outlined"
+                        onKeyDownCapture={(e) => {
+                            if (e.code === "Enter") {
+                                buttonOnClick();
+                            }
+                        }}
+                        color="success"
+                        onChange={(e) => setAnswer(e.target.value)}
+                    />
+                </div>
             </div>
         </div> 
     )

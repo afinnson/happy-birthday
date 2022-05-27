@@ -5,8 +5,7 @@
 
 
 .App-header {
-  background-color: #303030;
-  min-height: 4rem;
+  background-color: #252525;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,13 +15,13 @@
   font-family: "helvetica";
   font-weight: 400;
   color: white;
-  min-height: 10vh;
+  min-height: 5vh;
   border-bottom-width: 0px;
   border-color: black;
 }
 
 .App-body {
-  background-color: #404040;
+  /* background-color: #404040; */
   min-height: 4rem;
   display: flex;
   flex-direction: column;
@@ -34,7 +33,7 @@
   font-size: 16px;
   font-family: "helvetica";
   font-weight: 400;
-  min-height: 85vh;
+  min-height: 90vh;
   color: white;
 }
 
