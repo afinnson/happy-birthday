@@ -1,15 +1,15 @@
 {
-  "main.css": "/happybirthday/static/css/main.6cad8a6b.chunk.css",
-  "main.js": "/happybirthday/static/js/main.c87d908e.chunk.js",
-  "main.js.map": "/happybirthday/static/js/main.c87d908e.chunk.js.map",
-  "static/js/1.ba7e7644.chunk.js": "/happybirthday/static/js/1.ba7e7644.chunk.js",
-  "static/js/1.ba7e7644.chunk.js.map": "/happybirthday/static/js/1.ba7e7644.chunk.js.map",
-  "runtime~main.js": "/happybirthday/static/js/runtime~main.95e0bcfb.js",
-  "runtime~main.js.map": "/happybirthday/static/js/runtime~main.95e0bcfb.js.map",
-  "static/media/fanfare.mp3": "/happybirthday/static/media/fanfare.caa9f3c3.mp3",
-  "static/media/balloons_375.jpg": "/happybirthday/static/media/balloons_375.0357b49a.jpg",
-  "static/css/main.6cad8a6b.chunk.css.map": "/happybirthday/static/css/main.6cad8a6b.chunk.css.map",
-  "index.html": "/happybirthday/index.html",
-  "precache-manifest.c3f72dbb53d415e66ab6932b2a7d4310.js": "/happybirthday/precache-manifest.c3f72dbb53d415e66ab6932b2a7d4310.js",
-  "service-worker.js": "/happybirthday/service-worker.js"
+  "main.css": "/happy-birthday/static/css/main.76137537.chunk.css",
+  "main.js": "/happy-birthday/static/js/main.fa76f180.chunk.js",
+  "main.js.map": "/happy-birthday/static/js/main.fa76f180.chunk.js.map",
+  "static/js/1.43c0eba5.chunk.js": "/happy-birthday/static/js/1.43c0eba5.chunk.js",
+  "static/js/1.43c0eba5.chunk.js.map": "/happy-birthday/static/js/1.43c0eba5.chunk.js.map",
+  "runtime~main.js": "/happy-birthday/static/js/runtime~main.0f32a0ed.js",
+  "runtime~main.js.map": "/happy-birthday/static/js/runtime~main.0f32a0ed.js.map",
+  "static/media/fanfare.mp3": "/happy-birthday/static/media/fanfare.caa9f3c3.mp3",
+  "static/media/balloons_375.jpg": "/happy-birthday/static/media/balloons_375.0357b49a.jpg",
+  "static/css/main.76137537.chunk.css.map": "/happy-birthday/static/css/main.76137537.chunk.css.map",
+  "index.html": "/happy-birthday/index.html",
+  "precache-manifest.6dc263590002245de78742faea2a6299.js": "/happy-birthday/precache-manifest.6dc263590002245de78742faea2a6299.js",
+  "service-worker.js": "/happy-birthday/service-worker.js"
 }
