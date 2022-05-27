@@ -1,13 +1,6 @@
 {
   "short_name": "Grattis!",
   "name": "Grattis!",
-  "icons": [
-    {
-      "src": "happyBirthday.png",
-      "sizes": "45x42",
-      "type": "image/png"
-    }
-  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
