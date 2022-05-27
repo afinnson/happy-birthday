@@ -1,4 +1,4 @@
-import { DialogContentText, DialogTitle } from "@mui/material";
+import React from "react";
 
 const CorrectAnswerPopup = (props) => {
     const birthdayMonth = 5;

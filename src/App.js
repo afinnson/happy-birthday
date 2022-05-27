@@ -1,9 +1,7 @@
+import React from "react";
 import './App.css';
-import State from './state';
-import { useState, useEffect } from 'react';
 import QuestionBox from './QuestionBox';
 
-// import background from './landscape.jpg';
 import background from './balloons_375.jpg';
 
 function App() {
@@ -15,14 +13,12 @@ function App() {
     }}>
     <div className="App">
       <header className="App-header">
-        {/* Header */}
       </header>
     </div>
     <body
       className="App-body"
       style={{
         backgroundImage: `url(${background})`,
-        // backgroundRepeat
       }}
     >
       <QuestionBox/>

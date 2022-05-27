@@ -1,8 +1,10 @@
 {
   "short_name": "Grattis!",
   "name": "Grattis!",
+  "icons": [
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#404040"
+  "background_color": "#ffffff"
 }

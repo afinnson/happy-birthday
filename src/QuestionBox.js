@@ -13,10 +13,10 @@ const QuestionBox = () => {
 
     const [open, setOpen] = useState(false);
     const [answer, setAnswer] = useState("0");
-    const [date, setDate] = useState(new Date);
+    const [date, setDate] = useState(new Date());
 
     const openPopUp = () => {
-        setDate(new Date);
+        setDate(new Date());
         setOpen(true);
         audio.play();
     }
@@ -28,7 +28,7 @@ const QuestionBox = () => {
     const buttonOnClick = () => answer === SOLUTION() ? openPopUp() : console.log(answer + " är fel :(");
 
     function SimpleDialog(props) {
-        const { onClose, selectedValue, open } = props;
+        const { open } = props;
       
         return (
             <Dialog onClose={handleClose} open={open}>
@@ -52,11 +52,15 @@ const QuestionBox = () => {
             borderColor: '#242424',
             // backgroundColor: '#bc9932',
             backgroundColor: '#121212',
-            opacity: 0.9
+            opacity: 0.9,
+            whiteSpace: "pre-line"
         }}
         >
             <div style={{padding: "1rem "}}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus nibh et diam euismod porttitor. Ut tempus risus quis vestibulum consequat. Proin volutpat libero id quam pulvinar aliquam. Sed ullamcorper ipsum sit amet ipsum sagittis laoreet. Nam lobortis consequat lacus eu ullamcorper. Proin quis felis ac sem consectetur vulputate et at leo. Sed justo quam, mollis ac mauris vitae, cursus dapibus urna. Mauris sit amet magna at nibh tincidunt commodo eget in orci. Praesent vehicula commodo nunc non suscipit. Fusce convallis mollis urna, quis posuere eros ultricies sed. Donec quis diam vitae turpis dapibus dignissim. In blandit elit non convallis volutpat. Praesent ipsum felis, ornare at nisl vel, vulputate venenatis neque. Fusce ultricies nisi a lacus porta, non eleifend magna tincidunt.
+                {"Det finns 18 olika rektanglar med heltalskoordinater i ett rutnät med sidlängder 2 och 3. " +
+                "Låt r(n, m) vara antalet rektanglar i ett (n x m)-rutnät, så att r(2, 3) = 18. " +
+                "Låt n ≤ m vara de minsta positiva heltalen sådana att r(n,m) = 18194484.\n" +
+                "Vad är n + m²?"}
             </div>
             <SimpleDialog
                 open={open}
@@ -82,7 +86,7 @@ const QuestionBox = () => {
                         // minHeight: "3rem"                        
                     }}
                 >
-                    <Button
+                <Button
                     onClick={buttonOnClick}
                     style={{
                         backgroundColor: '#dbb62e',
@@ -91,6 +95,7 @@ const QuestionBox = () => {
                     }}
                     color= {answer === SOLUTION() ? "success" : "error"}
                     >
+                        {/* // eslint-disable-next-line */}
                         🎁
                     </Button>
                 </div>
