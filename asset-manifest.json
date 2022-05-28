@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/happy-birthday/static/css/main.f80a6e52.css",
-    "main.js": "/happy-birthday/static/js/main.38967db7.js",
+    "main.js": "/happy-birthday/static/js/main.d7c49a25.js",
     "static/media/balloons_375.jpg": "/happy-birthday/static/media/balloons_375.bb4998b6bb6a6945833f.jpg",
-    "static/media/fanfare.mp3": "/happy-birthday/static/media/fanfare.56efca852ae6632d7ab7.mp3",
+    "static/media/fanfare_short.mp3": "/happy-birthday/static/media/fanfare_short.71de13791910414cda2c.mp3",
     "index.html": "/happy-birthday/index.html",
     "main.f80a6e52.css.map": "/happy-birthday/static/css/main.f80a6e52.css.map",
-    "main.38967db7.js.map": "/happy-birthday/static/js/main.38967db7.js.map"
+    "main.d7c49a25.js.map": "/happy-birthday/static/js/main.d7c49a25.js.map"
   },
   "entrypoints": [
     "static/css/main.f80a6e52.css",
-    "static/js/main.38967db7.js"
+    "static/js/main.d7c49a25.js"
   ]
 }
