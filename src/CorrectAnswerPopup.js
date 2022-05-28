@@ -20,13 +20,13 @@ const CorrectAnswerPopup = (props) => {
             color: "black",
             borderStyle: "solid",
             borderWidth: "4px",
-            borderColor: "black",
+            borderColor: "#f6bcd5",
             opacity: 0.9,
             whiteSpace: "pre-line"
         }}
         >
             {"Grattis" + (isBirthday(props.date) ? "" : " i efterskott") + "!\n"}
-            {"Jag hoppas du " + (isBirthday(props.date) ? "får" : "hade") + " en jättebra födelsedag! "}
+            {"Jag hoppas att du " + (isBirthday(props.date) ? "får" : "hade") + " en jättebra födelsedag! "}
             {"Som en bonus borde du kunna återanvända din lösning här till "} <a href="https://projecteuler.net/problem=85">det här</a>
             {" problemet på Project Euler!"}
             {" Du kan även fundera på vad det är för speciellt med talet " + SOLUTION() + "."}
